@@ -15,6 +15,10 @@
 		88142E13247D1D15007DE60E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88142E11247D1D15007DE60E /* LaunchScreen.storyboard */; };
 		88142E16247D1D15007DE60E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88142E15247D1D15007DE60E /* main.m */; };
 		88142E20247D1D15007DE60E /* HIUListKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88142E1F247D1D15007DE60E /* HIUListKitTests.m */; };
+		88142E2E247D1EFA007DE60E /* UIViewController+UIViewController_HIUAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 88142E2D247D1EFA007DE60E /* UIViewController+UIViewController_HIUAlert.m */; };
+		88142E31247D2089007DE60E /* HIUAlertConstructor.m in Sources */ = {isa = PBXBuildFile; fileRef = 88142E30247D2089007DE60E /* HIUAlertConstructor.m */; };
+		88142E34247D26CC007DE60E /* HIUAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 88142E33247D26CC007DE60E /* HIUAlertAction.m */; };
+		88142E37247D279D007DE60E /* HIUAssertion.m in Sources */ = {isa = PBXBuildFile; fileRef = 88142E36247D279D007DE60E /* HIUAssertion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,15 @@
 		88142E1B247D1D15007DE60E /* HIUListKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HIUListKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88142E1F247D1D15007DE60E /* HIUListKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HIUListKitTests.m; sourceTree = "<group>"; };
 		88142E21247D1D15007DE60E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88142E2C247D1EFA007DE60E /* UIViewController+UIViewController_HIUAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UIViewController_HIUAlert.h"; sourceTree = "<group>"; };
+		88142E2D247D1EFA007DE60E /* UIViewController+UIViewController_HIUAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UIViewController_HIUAlert.m"; sourceTree = "<group>"; };
+		88142E2F247D2089007DE60E /* HIUAlertConstructor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIUAlertConstructor.h; sourceTree = "<group>"; };
+		88142E30247D2089007DE60E /* HIUAlertConstructor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HIUAlertConstructor.m; sourceTree = "<group>"; };
+		88142E32247D26CC007DE60E /* HIUAlertAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIUAlertAction.h; sourceTree = "<group>"; };
+		88142E33247D26CC007DE60E /* HIUAlertAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HIUAlertAction.m; sourceTree = "<group>"; };
+		88142E35247D279D007DE60E /* HIUAssertion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIUAssertion.h; sourceTree = "<group>"; };
+		88142E36247D279D007DE60E /* HIUAssertion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HIUAssertion.m; sourceTree = "<group>"; };
+		88142E3A247D2E38007DE60E /* HIUCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIUCommon.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +97,9 @@
 		88142E02247D1D13007DE60E /* HIUListKit */ = {
 			isa = PBXGroup;
 			children = (
+				88142E38247D2D4C007DE60E /* Common */,
+				88142E2B247D1ED1007DE60E /* ActionHelper */,
+				88142E2A247D1EBD007DE60E /* Assertion */,
 				88142E03247D1D13007DE60E /* AppDelegate.h */,
 				88142E04247D1D13007DE60E /* AppDelegate.m */,
 				88142E06247D1D13007DE60E /* SceneDelegate.h */,
@@ -106,6 +122,36 @@
 				88142E21247D1D15007DE60E /* Info.plist */,
 			);
 			path = HIUListKitTests;
+			sourceTree = "<group>";
+		};
+		88142E2A247D1EBD007DE60E /* Assertion */ = {
+			isa = PBXGroup;
+			children = (
+				88142E35247D279D007DE60E /* HIUAssertion.h */,
+				88142E36247D279D007DE60E /* HIUAssertion.m */,
+			);
+			path = Assertion;
+			sourceTree = "<group>";
+		};
+		88142E2B247D1ED1007DE60E /* ActionHelper */ = {
+			isa = PBXGroup;
+			children = (
+				88142E2C247D1EFA007DE60E /* UIViewController+UIViewController_HIUAlert.h */,
+				88142E2D247D1EFA007DE60E /* UIViewController+UIViewController_HIUAlert.m */,
+				88142E2F247D2089007DE60E /* HIUAlertConstructor.h */,
+				88142E30247D2089007DE60E /* HIUAlertConstructor.m */,
+				88142E32247D26CC007DE60E /* HIUAlertAction.h */,
+				88142E33247D26CC007DE60E /* HIUAlertAction.m */,
+			);
+			path = ActionHelper;
+			sourceTree = "<group>";
+		};
+		88142E38247D2D4C007DE60E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				88142E3A247D2E38007DE60E /* HIUCommon.h */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,10 +254,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88142E31247D2089007DE60E /* HIUAlertConstructor.m in Sources */,
 				88142E0B247D1D13007DE60E /* ViewController.m in Sources */,
 				88142E05247D1D13007DE60E /* AppDelegate.m in Sources */,
 				88142E16247D1D15007DE60E /* main.m in Sources */,
+				88142E2E247D1EFA007DE60E /* UIViewController+UIViewController_HIUAlert.m in Sources */,
+				88142E34247D26CC007DE60E /* HIUAlertAction.m in Sources */,
 				88142E08247D1D13007DE60E /* SceneDelegate.m in Sources */,
+				88142E37247D279D007DE60E /* HIUAssertion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
